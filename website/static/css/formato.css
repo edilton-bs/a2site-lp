@@ -1,0 +1,225 @@
+	/* CODIGO QUE POSICIONA A CAIXA DE LOGIN */
+#boxlogin{
+	width: 350px;
+	position: absolute;
+	top: 18%;
+	left: 65%;
+	box-shadow: 12px 12px 30px rgb(20, 20, 31);
+	}
+	/* FONTES DO SITE */
+h1 {
+	font-family: "Lucida Console", "Courier New", monospace, !important;
+	color: #fff;
+	opacity: 0.90;
+	position: absolute;
+	top: 18%;
+	left: 20%;
+	
+}
+.p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  	position: absolute;
+	top: 28%;
+	left: 20%;
+}
+.p2 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  	opacity: 0.65;
+}
+	
+
+/* FORMATAÇÃO DA LOGOS */
+#facebook-linkedin i {
+	
+	margin: 15px 10px;
+	cursor: pointer;
+	
+}
+/* CORES DAS LOGOS */
+
+.fa-facebook-square {
+	color: #3B5998;
+}
+
+.fa-linkedin-square {
+	color: #0077B5;
+}
+
+.fa-twitter-square {
+	color: #00acee
+}
+
+/* CSS PARA O RODAPÉ DA PÁGINA */
+
+#logofooter {
+	background-color: rgba(0,0,3,0.85);
+	
+}
+
+
+#corpofooter {
+	background-color: rgba(0,0,3,0.85);
+	height: 240px;
+	
+}
+
+h4 {
+	font-family: OCR A Std, monospace;
+	color: #fff;
+	opacity: 0.30;
+	text-align: center;
+	
+	
+}
+
+/* FONTES USADAS NO RODAPÉ */
+.p4 {
+	font-family: OCR A Std, monospace, !important;
+	color: #fff;
+	opacity: 0.30;
+	font-size: 12px;
+}
+
+.p5 {
+	font-family: OCR A Std, monospace;
+	color: #fff;
+	opacity: 0.50;
+	font-size: 15px;
+}
+
+.p6 {
+	color: yellow;
+	
+}
+.p7 {
+	font-family: OCR A Std, monospace;
+	color: #fff;
+	opacity: 0.30;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+
+/* BOX DE CONTATO */
+#contatofooter {
+	position: absolute;
+	top: 18%;
+	left: 80%;
+}
+	
+/* LOGO DAS REDES SOCIAIS */
+#redesfooter {
+	position: absolute;
+	top: 60%;
+	left: 80%;
+}
+	
+#redesfooter i {
+	color: #fff;
+	margin: 5px 8px;
+	opacity: 0.40;
+	cursor: pointer;
+}
+
+/* whatsapp ICONE DO RODAPÉ */
+.fa-whatsapp {
+	cursor: pointer;
+}
+
+.fa-exclamation-triangle {
+	color: yellow;
+}
+/* CENTRALIZAR A LINGUAGEM */
+#infofooter2 {
+	text-align: center;
+}
+
+
+/* BOTAO GOSTEI E NAO GOSTEI */
+
+.likecoment {
+	position: relative;
+	top: 20%;
+	left: 32%;
+}
+
+.likecoment i {
+	margin:3px 11px;
+}
+
+.fa-thumbs-o-up {
+	color: green;
+}
+.fa-thumbs-o-down {
+	color: red;
+}
+
+/* CSS DO MENU */
+
+#menu p {
+	font-family: OCR A Std, monospace, !important;
+	color: #fff;
+	opacity: 0.68;
+	font-size: 15px;
+}
+
+
+/* FORMATO DAS IMAGENS DA MATERIA*/
+
+
+.imgformato {
+	height: 250px;
+	width: 200px;
+}
+
+	
+
+
+
+/* CSS DO PERFIL */
+
+.container-fluid {
+	background-color: white;
+}
+
+
+#caixaperfil {
+	box-shadow: 12px 12px 10px rgb(20, 20, 31);
+	background-color: rgba(102, 153, 255, 0.3);
+}
+
+#caixaperfil li {
+	box-shadow: 2px 2px 1px rgb(20, 20, 31);
+	background-color: rgba(102, 153, 255, 0.3);
+	cursor: pointer;
+}
+
+.imagemamigos {
+	width: 80px;
+	height: 120px;
+	box-shadow: 2px 2px 1px rgb(20, 20, 31);
+	cursor: pointer;
+}
+
+#mostrar-amigos p {
+	cursor: pointer;
+	color: blue;
+}
+.imagemamigos2 {
+	width: 40px;
+	height: 60px;
+	box-shadow: 2px 2px 1px rgb(20, 20, 31);
+	cursor: pointer;
+}
+
+
+
+
+

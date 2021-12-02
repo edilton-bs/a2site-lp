@@ -1,0 +1,10 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+
+[main]
+version = 0.2.0
+recent_files = ['C:\\Users\\Edilton\\.spyder-py3\\temp.py', 'manage.py', 'website\\templates\\index.html', 'website\\urls.py', 'website\\views.py', 'a2_site\\settings.py', 'a2_site\\urls.py', 'a2_site\\__init__.py', 'a2_site\\asgi.py', 'website\\admin.py', 'website\\apps.py', 'website\\models.py', 'website\\tests.py']
+

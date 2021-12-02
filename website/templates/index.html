@@ -1,0 +1,60 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <!-- DIV PARA CRIAR A IMAGEM DE BACKGROUND TA TELA DE LOGIN -->
+  {% load static %}
+<div class="bg-image" style="
+	  background-image: url({% static "website/fundo.jpg" %}) ;
+      height: 100vh; 
+	  width: 100vw; 
+	  background-size: cover;"></div>
+	  
+   <!-- TEXTO DA TELA DE LOGIN -->  
+  <h1> E S C O L I N E . C O M </h1>
+  <p class="p1 text-light"> Organize sua jornada de estudos com E S C O L I N E . C O M.</p>
+  <p class="p2 text-light"> Planeje sua vida acadêmica. Invista em você mesmo.</p>
+   <!-- BOX DE LOGIN -->  
+   
+  
+	<div class="card" id="boxlogin">
+	  
+		<div class="card-body">
+		
+			<!-- INPUT DE LOGIN -->
+			<form>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Login/E-mail</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu E-mail ou login">
+					<div id="emailHelp" class="form-text"></div>
+				</div>
+				<!-- INPUT DE SENHA -->
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Senha</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua Senha">
+				</div>
+	  
+				<!-- BOTÃO DE VERIFICAÇÃO -->
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Check me out</label>
+				</div>
+	  
+				<!-- 	BOTÃO REGISTRAR/LOGIN -->
+				<div class="d-grid gap-2 d-md-block">
+					<button type="button" class="btn btn-secondary">Registrar</button>
+					<button class="btn btn-primary" type="button">Login</button>
+					<!-- BOTÃO DE REGISTRAR COM AS REDES SOCIAIS -->
+					<label for="redes-sociais"><p class="p3"> Ou entre com suas redes sociais!</p></label>
+	  
+					<div id="facebook-linkedin">
+						<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+						<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+						<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+					</div>
+	  
+				</div>
+			</form>
+  
+		</div>
+	</div>
+{% endblock %}

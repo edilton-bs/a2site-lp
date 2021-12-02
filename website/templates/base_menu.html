@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  {% block title %}<title>Estudante Space</title>{% endblock %}
+  <meta charset="utf-8">
+	<!-- css bootstrap via cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- Add additional CSS in static file -->
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/formato.css' %}">
+  <!-- icons fontawesome -->
+	<script src="https://kit.fontawesome.com/52605967c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- barra de navegação -->
+  
+<nav class=" navbar navbar-expand-lg  nav-lek">
+  <div class="container-fluid nav-lek">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active c-hover" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link c-hover" href="#">Ajuda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="edit-profile.html">Configurações</a></li>
+            <li><a class="dropdown-item" href="#">Suporte</a></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- menu vertical -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </div>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    
+                    <li>
+					    <a href="main.html" class="nav-link px-0 c-hover">
+                        <p> <i class="fas fa-home"></i></i> Início </p> </a>
+					
+					    <a href="profile.html" class="nav-link px-0 c-hover">
+                        <p> <i class="fa fa-user-circle" aria-hidden="true"></i> Perfil </p> </a>
+						
+                        <a href="nota.html" class="nav-link px-0 c-hover">
+						<p>	<i class="fas fa-poll"></i> Notas </p> </a>
+                        
+						<a href="plano.html" class="nav-link px-0 c-hover"> 
+						<p>	<i class="fas fa-calendar-alt"></i> Plano de Estudo </p> </a>
+                            
+                        <a href="forum.html" class="nav-link px-0 c-hover"> 
+						<p>	<i class="fas fa-comments"></i> Fórum </p> </a>
+                           
+						<a href="friends.html" class="nav-link px-0 c-hover"> 
+						<p>	<i class="fa fa-address-book" aria-hidden="true"></i> Amigos </p> </a>
+						 
+						<a href="edit-profile.html" class="nav-link px-0 c-hover">
+						<p>	<i class="fas fa-cog"></i> Configurações </p> </a>
+						
+						<a href="#" class="nav-link px-0 c-hover">
+						<p>	<i class="fas fa-sign-out-alt"></i> Sair </p> </a>
+                    </li>
+        
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    
+                    
+                </div>
+            </div>
+        </div>
+		
+       <div class="col py-3">
+		<!-- COMEÇA AQUI O CONTEÚDO DO SITE -->
+		{% block content %}{% endblock %}
+		<!-- fim conteúdo -->
+        
+        </div>
+	</div>
+</div>
+
+
+	<br>
+	<!-- scripts do bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  
+<!-- RODAPÉ - FUNÇÃO QUE CRIA O RODAPÉ DO SITE --> 
+<footer>
+
+	<div class="card">
+		<div class="card-header" id="logofooter">
+		<h4> E S C O L I N E . C O M </h4>
+		</div>
+	  
+		<div class="card-body" id="corpofooter">
+			<div class="contato" id="contatofooter">
+			<p class="p5"> Contato:</p> 
+			<p class="p4"> <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> (21)9999-9999</p>
+			<p class="p4"> contato@escoline.com</p>
+			</div>
+			<!-- RODAPÉ- REDES SOCIAIS --> 
+			<div class="Redes-sociais" id="redesfooter">
+			<p class="p5">Siga-nos nas redes sociais!</p>
+			<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+			<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+			<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+			</div>	
+			
+			<div class="info" id="infofooter">
+			<p class="p4"> Sobre a ESCOLINE.COM</p>
+			<p class="p6"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> ATENÇÃO!  </p>
+			<p class="p4"> Esta empresa é fictícia <br> esse site é apenas um treinamento de HTML <br> nenhum de seus serviços existem. <br> GRATO!  </p>
+			<p class="p4"> 25/09/2021</p>
+			</div>
+			
+			
+			<div class="info2" id="infofooter2">
+			<p class="p7"> Português (pt-br) </p>
+			
+			</div>
+
+	  
+
+		
+		</div>
+	</div>
+
+
+</footer>
+  
+  
+  
+  </body>
+</html>
