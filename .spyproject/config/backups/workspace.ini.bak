@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['C:\\Users\\Edilton\\.spyder-py3\\temp.py', 'manage.py', 'website\\templates\\index.html', 'website\\urls.py', 'website\\views.py', 'a2_site\\settings.py', 'a2_site\\urls.py', 'a2_site\\__init__.py', 'a2_site\\asgi.py', 'website\\admin.py', 'website\\apps.py', 'website\\models.py', 'website\\tests.py']
+recent_files = ['C:\\Users\\Edilton\\.spyder-py3\\temp.py', 'manage.py', 'website\\templates\\index.html', 'website\\urls.py', 'website\\views.py', 'a2_site\\settings.py', 'a2_site\\urls.py', 'a2_site\\__init__.py', 'a2_site\\asgi.py', 'website\\admin.py', 'website\\apps.py', 'website\\models.py', 'website\\tests.py', 'website\\templates\\base_generic.html', 'website\\templates\\base_menu.html', 'website\\migrations\\__init__.py', 'a2_site\\wsgi.py', 'website\\__init__.py']
 

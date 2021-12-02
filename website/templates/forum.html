@@ -1,0 +1,129 @@
+{% extends "base_menu.html" %}
+
+{% block content %}
+<!-- forum -->
+		
+		
+			
+			<!-- barra de navegação para o fórum -->
+			<nav class="navbar navbar-light bg-light">
+			   
+			
+			
+			  <div class="container-fluid">
+			      <div class="row">
+				     
+					  <div class="col-sm-5">
+					      <div class="inner-sidebar-header justify-content-center">
+								<button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal" data-target="#threadModal">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus mr-2">
+										<line x1="12" y1="5" x2="12" y2="19"></line>
+										<line x1="5" y1="12" x2="19" y2="12"></line>
+									</svg>
+									NOVA DISCUSSÃO
+								</button>
+                           </div>
+					   </div>
+					   
+					   <div class="col">
+						<a class="nav-link nav-icon rounded-circle nav-link-faded mr-3 d-md-none" href="#" data-toggle="inner-sidebar"><i class="material-icons">arrow_forward_ios</i></a>
+								<select class="custom-select custom-select-sm w-auto mr-1">
+									<option selected="">Últimos</option>
+									<option value="1">Populares</option>
+									<option value="3">Resolvidos</option>
+									<option value="3">Não resolvidos</option>
+									<option value="3">Sem respostas</option>
+								</select>
+					  </div>
+					 </div>  
+				<form class="d-flex">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			  </div>
+			</nav>
+			
+			
+			
+			
+		
+		<hr>
+		<!-- forum list -->
+		     <a href="#">
+				<div  class="container-sm ">
+					<div class="row bg-light rounded shadow c-hover ">
+						<div class="col-sm-1 py-2 ">
+										<img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" />
+										</div>
+					  
+					  
+									<div class="col-sm-8 pt-2">
+									  <b>Preciso de ajuda</b>
+									  <br>
+									  <span class="text-dark ">
+									  lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+									  </span>
+									  <br>
+									  <br>
+									  <p class="text-muted">drewdan publicou <span class="text-secondary font-weight-bold">13 minutos atrás</span></p>
+									  
+									</div>
+									
+									
+									<div class="col-sm-2 pt-3">
+									   <div class="text-muted small text-center align-self-center">
+										<span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 19</span>
+										<span><i class="far fa-comment ml-2"></i> 3</span>
+									   </div>
+										<!-- LIKE E DISLIKE -->
+										<div class="like likecoment">
+										<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+										<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+										</div>	
+									</div>
+					
+					</div>
+							
+				</div>		
+			</a>
+			<br>
+			<a href="#">
+				<div  class="container-sm ">
+					<div class="row bg-light rounded shadow c-hover ">
+						<div class="col-sm-1 py-2 ">
+										<img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="mr-3 rounded-circle" width="50" alt="User" />
+										</div>
+					  
+					  
+									<div class="col-sm-8 pt-2">
+									  <b>Bom dia</b>
+									  <br>
+									  <span class="text-dark ">
+									  lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+									  </span>
+									  <br>
+									  <br>
+									  <p class="text-muted">ary publicou <span class="text-secondary font-weight-bold">13 minutos atrás</span></p>
+										
+										
+									</div>
+									
+									
+									<div class="col-sm-2 pt-3">
+									   <div class="text-muted small text-center align-self-center">
+										<span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 20</span>
+										<span><i class="far fa-comment ml-2"></i> 3</span>
+									   </div>
+										<!-- LIKE E DISLIKE -->
+										<div class="like likecoment">
+										<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+										<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+										</div>	
+									</div>
+					
+					</div>
+					
+							
+				</div>		
+			</a>
+{% endblock %}
