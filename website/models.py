@@ -7,4 +7,4 @@ class Materias(models.Model):
     
     def __str__(self):
         """String for representing the Model object."""
-        return self.title
+        return self.name
