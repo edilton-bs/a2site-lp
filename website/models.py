@@ -1,4 +1,5 @@
 from django.db import models
+# from django.contrib.auth.models import AbstractUser
 
 class Materias(models.Model):
     name = models.CharField(max_length=100)
@@ -8,3 +9,9 @@ class Materias(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return self.name
+    
+# class User(AbstractUser):
+#     age = models.IntegerField()
+#     num_materias = models.IntegerField()
+    
+ 
