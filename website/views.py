@@ -1,4 +1,5 @@
 from django.shortcuts import render, reverse
+from website.models import Materias
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 
 def index(request):
@@ -9,10 +10,12 @@ def index(request):
 
 
 def main(request):
-    """View function for home page of site."""
+    materias = Materias.objects.filter(pk__in=[1,2,3,4,5])
+    
+    context = {'materias': materias}
 
     # Render the HTML template index.html with the data in the context variable
-    return render(request,'main.html')
+    return render(request,'main.html', context=context)
 
 def nota(request):
     """View function for home page of site."""
