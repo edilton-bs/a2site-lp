@@ -22,7 +22,7 @@ def registrar(request):
     
     
     #criando usuario
-    for num in range(1, 3):
+    for num in range(1, 201):
         sexos = [Usuario.MALE, Usuario.FEMALE]
         
         idade = random.randint(10, 40)
