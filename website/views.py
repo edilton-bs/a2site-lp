@@ -10,6 +10,8 @@ def index(request):
     return render(request,'index.html')
 
 def registrar(request):
+    '''função para registrar usuários'''
+    
     materias = list(Materias.objects.all())
     
     
@@ -38,10 +40,6 @@ def registrar(request):
     return render(request,'index.html')
             
             
-            
-            
-    # Render the HTML template index.html with the data in the context variable
-    return render(request,'index.html')
 
 
 
