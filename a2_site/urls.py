@@ -9,6 +9,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('website/', include('website.urls')),
     path(r'edilton/', include('edilton.urls')),
+    path(r'caio/', include('caio.urls')),
+    path(r'dani/', include('dani.urls')),
+    path(r'pedro/', include('pedro.urls')),
     path('', RedirectView.as_view(url='/website/', permanent=True)),
     *staticfiles_urlpatterns()
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
