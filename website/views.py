@@ -52,7 +52,8 @@ def registrar(request):
                                    mat7 = grade[6],
                                    mat8 = grade[7],
                                    mat9 = grade[8],
-                                   mat10 = grade[9])
+                                   mat10 = grade[9],)
+
     
         combinacao.save()   
     return render(request,'index.html')

@@ -42,3 +42,4 @@ class Comb_materias(models.Model):
     mat8 = models.CharField(max_length=100)
     mat9 = models.CharField(max_length=100)
     mat10 = models.CharField(max_length=100)
+    
