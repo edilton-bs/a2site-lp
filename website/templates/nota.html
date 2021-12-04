@@ -8,12 +8,9 @@
                    <!--tabela de notas-->
                     <table class="border bg-light rounded shadow ">
                             <tr> <th>MATERIA</th> <th>NOTAS</th> <th>NOTAS</th> <th>RECUPERAÇÃO</th> <th>NOTAS</th> <th>NOTAS</th> <th>RECUPERAÇÃO</th> <th>SOMA FINAL</th> </tr>
-                            <tr> <td>Materia 1</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
-                            <tr> <td>Materia 2</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
-                            <tr> <td>Materia 3</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
-							<tr> <td>Materia 4</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
-							<tr> <td>Materia 5</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
-							<tr> <td>Materia 6</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            {% for materia in materias %}
+                            <tr> <td>{{materia.name}}</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                           {% endfor %}
                     </table>
                     
 					

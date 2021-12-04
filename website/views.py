@@ -55,9 +55,10 @@ def main(request):
 
 def nota(request):
     """View function for home page of site."""
-
+    materias = Materias.objects.filter(pk__in=[1,2,3,4,5])
+    context = {'materias': materias}
     # Render the HTML template index.html with the data in the context variable
-    return render(request,'nota.html')
+    return render(request,'nota.html', context=context)
 
 
 def forum(request):
