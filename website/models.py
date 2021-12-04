@@ -28,3 +28,17 @@ class Usuario(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return self.nome
+    
+    
+    
+class Comb_materias(models.Model):
+    mat1 = models.CharField(max_length=100)
+    mat2 = models.CharField(max_length=100)
+    mat3 = models.CharField(max_length=100)
+    mat4 = models.CharField(max_length=100)
+    mat5 = models.CharField(max_length=100)
+    mat6 = models.CharField(max_length=100)
+    mat7 = models.CharField(max_length=100)
+    mat8 = models.CharField(max_length=100)
+    mat9 = models.CharField(max_length=100)
+    mat10 = models.CharField(max_length=100)
