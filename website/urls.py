@@ -12,3 +12,4 @@ urlpatterns = [
     #path('registrar', views.registrar, name="registrar")
 ]
 
+handler404 = "website.views.page_not_found_view"
