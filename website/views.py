@@ -42,7 +42,8 @@ def registrar(request):
             
             if materia not in grade:
                 grade[i] = materia
-        combinacao = Comb_materias(mat1 = grade[0], 
+        combinacao = Comb_materias(
+                                   mat1 = grade[0], 
                                    mat2 = grade[1], 
                                    mat3 = grade[2], 
                                    mat4 = grade[3], 
