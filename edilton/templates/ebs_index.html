@@ -38,11 +38,21 @@
 			
 						</div>
 					<h3>Quais matérias são menos cursadas por pessoas acima de 18 anos?</h3>
-					</div>
-					{% for materia in materias %}
-					
-    					{{{{materia}}}}
-    				{% endfor %}
+					<table class="border bg-light rounded shadow ">
+                            <tr> <th>MATERIA</th> <th>REGISTROS</th></tr>
+                            <tr> <td>{{mat1}}</td> <td>{{rank1}}</td></tr>
+                            <tr> <td>{{mat2}}</td> <td>{{rank2}}</td></tr>
+                            <tr> <td>{{mat3}}</td> <td>{{rank3}}</td></tr>
+                            <tr> <td>{{mat4}}</td> <td>{{rank4}}</td></tr>
+                            <tr> <td>{{mat5}}</td> <td>{{rank5}}</td></tr>
+                            <tr> <td>{{mat6}}</td> <td>{{rank6}}</td></tr>
+                            <tr> <td>{{mat7}}</td> <td>{{rank7}}</td></tr>
+                            <tr> <td>{{mat8}}</td> <td>{{rank8}}</td></tr>
+                            <tr> <td>{{mat9}}</td> <td>{{rank9}}</td></tr>
+                            <tr> <td>{{mat10}}</td> <td>{{rank10}}</td></tr>
+                    </table>
+A tabela acima foi criada, filtrando dados de usuários com idade de acima de 18 anos e, em seguida, contado a quantidade de usuários que registrou cada matéria.
+<br> Dessa 
 {% endblock %}
 
 {% block footer %}
