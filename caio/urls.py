@@ -1,7 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec  5 10:13:52 2021
+from django.urls import path
+from caio import views
 
-@author: user
-"""
 
+urlpatterns = [
+    path('', views.index, name='index'),
+
+]
