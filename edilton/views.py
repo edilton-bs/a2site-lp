@@ -19,20 +19,24 @@ def index(request):
     mats = pd.read_sql_query("SELECT * FROM website_materias", cnx)[["name"]]
     materias = mats.values.tolist()
     
-    colunas = [mat1, "mat2", "mat3", "mat4", "mat5", "mat6", "mat7", "mat8", "mat9", "mat10"]
+    colunas = ['mat1', "mat2", "mat3", "mat4", "mat5", "mat6", "mat7", "mat8", "mat9", "mat10"]
     
     pont = 0
-    rank = []
+    rank = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     for i in range(0, len(materias)):
         
         soma = 0
-        rank = []
+        
         for col in colunas:
             x = tabela[(tabela[[col]] == materias[i][0])].count()
             soma += x
     
             pont = soma.sum()
-            rank.append(pont)
+            rank[i] = pont
+            
+    df = pd.DataFrame(materias, rank)
+    df = df.sort_index()
+    rank = sorted(rank)
     
     rank1 = rank[9]
     rank2 = rank[8]
@@ -45,17 +49,17 @@ def index(request):
     rank9 = rank[1]
     rank10 = rank[0]
      
-    mat1 = materias[9][0]
-    mat2 = materias[8][0]
-    mat3 = materias[7][0]
-    mat4 = materias[6][0]
-    mat5 = materias[5][0]
-    mat6 = materias[4][0]
-    mat7 = materias[3][0]
-    mat8 = materias[2][0]
-    mat9 = materias[1][0]
-    mat10 = materias[0][0]
-    colunas = [mat1, "mat2", "mat3", "mat4", "mat5", "mat6", "mat7", "mat8", "mat9", "mat10"] 
+    mat1 = df[0].iloc[9]
+    mat2 = df[0].iloc[8]
+    mat3 = df[0].iloc[7]
+    mat4 = df[0].iloc[6]
+    mat5 = df[0].iloc[5]
+    mat6 = df[0].iloc[4]
+    mat7 = df[0].iloc[3]
+    mat8 = df[0].iloc[2]
+    mat9 = df[0].iloc[1]
+    mat10 = df[0].iloc[0]
+    
     context = {
         'mat1' : mat1,
         'mat2' : mat2,
@@ -76,9 +80,7 @@ def index(request):
         'rank7' : rank7,
         'rank8' : rank8,
         'rank9' : rank9,
-        'rank10' : rank10,
-        'materias' : colunas,
-        'rank' : rank}
+        'rank10' : rank10}
     
     # Render the HTML template index.html with the data in the context variable
     return render(request,'ebs_index.html', context=context)
