@@ -1,5 +1,5 @@
 from django.contrib import admin
-from website.models import Materias, Usuario, Comb_materias
+from website.models import Materias, Usuario, Comb_materias, Gatos
 
 admin.site.register(Materias)
 
@@ -11,6 +11,13 @@ class UsuarioAdmin(admin.ModelAdmin):
     
     
 admin.site.register(Usuario, UsuarioAdmin)
+
+class GatosAdmin(admin.ModelAdmin):
+    list_display = ("nome", "sexo")
+    
+    
+admin.site.register(Gatos, GatosAdmin)
+
 
 
 
