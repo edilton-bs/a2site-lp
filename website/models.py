@@ -29,7 +29,23 @@ class Usuario(models.Model):
         """String for representing the Model object."""
         return self.nome
     
+class Gatos(models.Model):
     
+    FEMALE = "F"
+    MALE = "M"
+    SEXO_CHOICES = (
+        ("F", "Fêmea"),
+        ("M", "Macho"),
+    )
+    
+    url_image = models.URLField(max_length=200)
+    nome = models.CharField(max_length=100)
+    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES, blank=False, null=False)
+    descrição = models.TextField(max_length=1000)
+    
+    def __str__(self):
+        """String for representing the Model object."""
+        return self.nome 
     
 class Comb_materias(models.Model):
     mat1 = models.CharField(max_length=100)
